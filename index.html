@@ -8,20 +8,6 @@
 
 //Edit data below to your personal preferences ----------------------------------
 
-//First Bday ---------------------------------
-year = 2021; month = 9; day = 17;
-//Give the point of time ------------------------
-hour= 0; min= 0; sec= 0;
-
-
-
-//-----------------------------------------------
-
-//Second Bday ---------------------------------
-year2 = 2022; month2 = 2; day2 = 4;
-//Give the point of time ------------------------
-hour2= 0; min2= 0; sec2= 0;
-
 //-----------------------------------------------
 //Standard text ---------------------------------
 main_titel= 'Is it Bday Yet?';
@@ -97,8 +83,8 @@ flikr= 'hide';
             create_countdown(bdayAngelDateObject, 'countbox2');
 
             //then set the interval so they update
-            setInterval("create_countdown(bdayMeltonDateObject, 'countbox')", 1000);
-            setInterval("create_countdown(bdayAngelDateObject, 'countbox2')", 1000);
+            setInterval(function(){create_countdown(bdayMeltonDateObject, 'countbox');}, 1000);
+            setInterval(function(){create_countdown(bdayAngelDateObject, 'countbox2');}, 1000);
         });
     </script>
 
